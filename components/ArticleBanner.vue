@@ -1,31 +1,51 @@
-<script setup lang="ts">
-import ViewBlogsButton from './buttons/ViewBlogsButton.vue';
-</script>
-
 <template>
   <section
-    class="w-full gradient border-solid border-t-[#141414] relative py-[80px]"
+    class="w-full gradient border-solid border-t-[#141414] relative py-[60px] md:pl-0 pl-4"
   >
-    <Container class="flex flex justify-between items-center w-full">
-      <article>
+    <Container
+      class="flex md:flex-row flex-col justify-between md:items-center items-start w-full"
+    >
+      <article
+        @mouseover="() => toggleEffect()"
+        @mouseout="() => toggleEffect()"
+      >
         <span class="bg-[#333333] py-[6px] px-[10px] rounded text-white"
-          >A Knowledge Treasure Trove</span
+          >Также можете найти статьи по темам</span
         >
-        <h3 class="text-[58px] font-medium text-white mt-[16px]">
-          Explore FutureTech's In-Depth Blog Posts
+        <h3 class="md:text-[52px] text-[34px] font-medium text-white mt-[16px]">
+          Отслеживайте новые статьи!<br />
+          <span class="animation">стараюсь писать их как можно чаще</span>
         </h3>
       </article>
-      <ViewBlogsButton text="View all post"/>
+      <ButtonMain text="Смотреть все статьи" class="md:mt-0 mt-[30px]" />
     </Container>
   </section>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .gradient {
   background: rgb(30, 30, 30);
   background: linear-gradient(deg(90%), #1a1a1a 30%, #111, #262626);
 }
 </style>
+
+<script setup lang="ts" scoped>
+import ButtonMain from './buttons/ButtonMain.vue';
+import gsap from 'gsap';
+
+const effect = useState<boolean>('effect', () => false);
+const toggleEffect = () => {
+  effect.value = !effect.value;
+};
+
+onUpdated(() => {
+  if (effect.value === false) {
+    gsap.to('.animation', {
+      opacity: 0
+    })
+  }
+})
+</script>
 
 <!-- <template>
   <section>

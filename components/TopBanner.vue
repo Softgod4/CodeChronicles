@@ -4,7 +4,7 @@
   >
     <a class="flex justify-center items-center py-5" href="https:/t.me">
       <p class="text-[#98989A] xl:text-sm text-xs">
-        Subscribe to my telegram For New & latest Blogs and Resources
+        Подпишитесь на мой телеграмм для отслеживания последних статей или новостей!
       </p>
       <img
         src="/image/arrow/arrow-topbanner.svg"

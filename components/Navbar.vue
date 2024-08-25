@@ -24,22 +24,22 @@
         <li
           class="mx-[2px] text-[#7E7E81] font-light py-[8px] px-[24px] border border-solid border-transparent transition-all bg-transparent hover:text-white hover:bg-[#141414] hover:border-[#333333] cursor-pointer rounded-lg"
         >
-          <a href="#">Home</a>
+          <a href="#">Главная</a>
         </li>
         <li
           class="mx-[2px] text-[#7E7E81] font-light py-[8px] px-[24px] border border-solid border-transparent transition-all bg-transparent hover:text-white hover:bg-[#141414] hover:border-[#333333] cursor-pointer rounded-lg"
         >
-          <a href="#">News</a>
+          <a href="#">Новости</a>
         </li>
         <li
           class="mx-[2px] text-[#7E7E81] font-light py-[8px] px-[24px] border border-solid border-transparent transition-all bg-transparent hover:text-white hover:bg-[#141414] hover:border-[#333333] cursor-pointer rounded-lg"
         >
-          <a href="#">Products</a>
+          <a href="#">Продукты</a>
         </li>
         <li
           class="mx-[2px] text-[#7E7E81] font-light py-[8px] px-[24px] border border-solid border-transparent transition-all bg-transparent hover:text-white hover:bg-[#141414] hover:border-[#333333] cursor-pointer rounded-lg"
         >
-          <a href="#">Resources</a>
+          <a href="#">Ресурсы</a>
         </li>
 
         <span class="bg-[#262626] w-[1px] h-6 mx-4"></span>
