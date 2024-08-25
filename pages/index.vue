@@ -1,7 +1,10 @@
 <template>
-  <div>
-    <h1>Index page</h1>
-    <NuxtLink to="/about">About</NuxtLink>
-    <NuxtLink to="/posts/1.vue">post 1</NuxtLink>
-  </div>
+	<MainSticky />
+	<ArticleFeatures />
 </template>
+
+<script lang="ts">
+	import { TresCanvas } from "@tresjs/core";
+	import ModelScene from "../components/ModelScene.vue";
+	import TresPerspectiveCamera from "@tresjs/core";
+</script>

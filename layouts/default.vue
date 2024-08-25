@@ -4,6 +4,7 @@ import Navbar from "~/components/Navbar.vue";
 
 <template>
   <div>
+    <TopBanner />
     <Navbar />
     <main><NuxtPage /></main>
   </div>
