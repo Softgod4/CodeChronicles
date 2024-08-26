@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxt/image": "^1.7.0",
+    "@nuxtjs/tailwindcss": "^6.12.1",
     "@tresjs/cientos": "^4.0.0",
     "@tresjs/core": "^4.2.7",
     "@tresjs/nuxt": "^3.0.3",
