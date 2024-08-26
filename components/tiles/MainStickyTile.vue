@@ -1,14 +1,14 @@
 <template>
   <article
-    class="flex flex-col justify-center items-center py-[50px] border-t border-solid border-[#262626] w-full"
+    class="flex flex-col justify-center items-center sm:py-[50px] py-[12px] border-t border-solid border-[#262626] w-full"
   >
     <div class="flex flex-col justify-start items-start">
       <p
-        class="stats text-white text-[40px] font-medium text-start flex justify-start items-start"
+        class="stats text-white sm:text-[40px] text-[22px] font-medium text-start flex justify-start items-start"
       >
         {{ stats }} <span class="text-[#FFD11A]">+</span>
       </p>
-      <p class="text-[#98989A] text-[14px] font-light text-start">
+      <p class="text-[#98989A] sm:text-[14px] text-[8px] font-light text-start">
         {{ description }}
       </p>
     </div>

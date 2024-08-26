@@ -1,13 +1,12 @@
 <script setup lang="ts">
-import Navbar from "~/components/Navbar.vue";
+import Navbar from '~/components/Navbar.vue';
+import TopBanner from '~/components/TopBanner.vue';
 </script>
 
 <template>
   <div>
     <TopBanner />
     <Navbar />
-    <main><NuxtPage /></main>
+    <NuxtPage />
   </div>
 </template>
-
-<style scoped></style>

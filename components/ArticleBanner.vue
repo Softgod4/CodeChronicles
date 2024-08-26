@@ -1,23 +1,28 @@
 <template>
   <section
-    class="w-full gradient border-solid border-t-[#141414] relative py-[60px] md:pl-0 pl-4"
+    class="w-full gradient border-solid border-t-[#141414] relative py-[60px] md:pl-0 pl-4 md:pr-0 pr-4 border-b border-t border-solid border-[#262626] shadow"
   >
     <Container
       class="flex md:flex-row flex-col justify-between md:items-center items-start w-full"
     >
       <article
-        @mouseover="() => toggleEffect()"
-        @mouseout="() => toggleEffect()"
+        @mouseenter="() => toggleEffect()"
+        @mouseleave="() => toggleEffect()"
       >
         <span class="bg-[#333333] py-[6px] px-[10px] rounded text-white"
           >Также можете найти статьи по темам</span
         >
-        <h3 class="md:text-[52px] text-[34px] font-medium text-white mt-[16px]">
-          Отслеживайте новые статьи!<br />
-          <span class="animation">стараюсь писать их как можно чаще</span>
+        <h3
+          class="md:text-[38px] lg:text-[42px] text-[34px] font-medium text-white mt-[16px]"
+        >
+          Отслеживайте новые статьи!
         </h3>
+        <span
+          class="animation font-extralight text-[#7E7E81] text-[24px] opacity-0"
+          >стараюсь писать их как можно чаще</span
+        >
       </article>
-      <ButtonMain text="Смотреть все статьи" class="md:mt-0 mt-[30px]" />
+      <ButtonMain text="Смотреть все статьи" class="md:mt-0 mt-[20px]" />
     </Container>
   </section>
 </template>
@@ -38,13 +43,17 @@ const toggleEffect = () => {
   effect.value = !effect.value;
 };
 
-onUpdated(() => {
-  if (effect.value === false) {
+watch(effect, (oldValue, newValue) => {
+  if (newValue) {
     gsap.to('.animation', {
       opacity: 0
-    })
+    });
+  } else {
+    gsap.to('.animation', {
+      opacity: 1
+    });
   }
-})
+});
 </script>
 
 <!-- <template>

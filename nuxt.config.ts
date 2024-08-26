@@ -16,6 +16,14 @@ export default defineNuxtConfig({
     }
   },
 
+  vite: {
+    server: {
+      hmr: {
+        overlay: false
+      }
+    }
+  },
+
   vue: {
     compilerOptions: {
       isCustomElement: tag =>
