@@ -1,6 +1,6 @@
 <template>
   <section
-    class="w-full gradient border-solid border-t-dark-bg relative py-[40px] md:pl-0 pl-4 md:pr-0 pr-4 border-b border-t border-solid border-color-border shadow"
+    class="w-full gradient border-solid border-t-dark-bg relative py-[40px] md:pl-0 pl-4 md:pr-0 pr-4 border-b border-t border-solid border-color-border shadow-md"
   >
     <Container
       class="flex md:flex-row flex-col justify-between md:items-center items-start w-full"

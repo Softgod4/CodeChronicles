@@ -16,9 +16,7 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { hid: 'description', name: 'description', content: 'CodeChronicles by softgod' }
       ],
-      link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/image/navbar/logo2.png' }
-      ]
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/image/navbar/logo2.png' }]
     }
   },
 
@@ -51,5 +49,5 @@ export default defineNuxtConfig({
         ].includes(tag)
     }
   },
-  modules: ['@nuxt/image', '@tresjs/nuxt'],
+  modules: ['@nuxt/image', '@tresjs/nuxt']
 });
