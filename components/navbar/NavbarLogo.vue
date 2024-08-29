@@ -1,5 +1,5 @@
 <template>
-  <a class="flex justify-center items-center" id="logo" href="#">
+  <NuxtLink class="flex justify-center items-center" id="logo" to="/">
     <NuxtImg
       src="/image/navbar/logo2.png"
       alt="avatar-github"
@@ -13,7 +13,7 @@
       class="px-2 py-1 border border-solid rounded-md border-color-border text-[#7E7E81] ml-4"
       >{{ version }}</span
     >
-  </a>
+  </NuxtLink>
 </template>
 
 <script setup lang="ts">

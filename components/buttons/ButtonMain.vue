@@ -1,24 +1,12 @@
 <template>
-  <button
-    class="btn bg-dark-bg text-light-text text-[18px] flex justify-between items-center border border-color-border rounded-xl px-[24px] py-[18px] font-light transition-all shadow-md"
+  <NuxtLink
+    class="btn bg-dark-bg text-light-text text-[18px] flex justify-between items-center border border-color-border rounded-xl px-[24px] py-[18px] font-light transition-all shadow-md cursor-pointer"
+    :to="to"
   >
     {{ text }}
-    <NuxtImg
-      src="/image/viewAllButton.svg"
-      alt="view all"
-      class="w-[24px] h-[24px] ml-[10px]"
-    />
-  </button>
+    <NuxtImg src="/image/viewAllButton.svg" alt="view all" class="w-[24px] h-[24px] ml-[10px]" />
+  </NuxtLink>
 </template>
-
-<script setup lang="ts">
-defineProps({
-  text: {
-    type: String,
-    required: true
-  }
-});
-</script>
 
 <style lang="scss" scoped>
 .btn {
@@ -34,3 +22,17 @@ defineProps({
   }
 }
 </style>
+
+<script setup scoped lang="ts">
+defineProps({
+  text: {
+    type: String,
+    required: true
+  },
+  to: {
+    type: String,
+    required: false,
+    default: '/'
+  }
+});
+</script>

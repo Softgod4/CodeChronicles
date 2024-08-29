@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="sticky top-0 w-full bg-[#1A1A1A] text-white py-[8px] z-50 border-b border-solid border-color-border flex justify-center items-center"
+    class="sticky top-0 w-full bg-[#1A1A1A]/95 backdrop-blur-md text-white py-[8px] z-50 border-b border-solid border-color-border flex justify-center items-center"
     id="navbar"
   >
     <Container
@@ -9,16 +9,16 @@
       <NavbarLogo name="CodeChronicles" version="v 1.0.0" />
 
       <ul class="xl:flex hidden justify-between items-center text-[18px]">
-        <NavbarLink text="Главная" />
-        <NavbarLink text="Новости" />
-        <NavbarLink text="Продукты" />
-        <NavbarLink text="Ресурсы" />
+        <NavbarLink text="Главная" to="/" />
+        <NavbarLink text="Статьи" to="/blog"/>
+        <NavbarLink text="Новости" to="/"/>
+        <NavbarLink text="Обо мне" to="/about"/>
 
         <span class="bg-color-border w-[1px] h-6 mx-4"></span>
 
         <li class="px-4">
           <a
-            href="https://github.com"
+            href="https://github.com/Softgod4"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -33,7 +33,7 @@
         </li>
         <li class="px-4">
           <a
-            href="https://discord.com"
+            href="https://discord.gg/qPcTFHgfHa"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Discord"

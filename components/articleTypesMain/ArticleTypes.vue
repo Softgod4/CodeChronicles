@@ -3,7 +3,7 @@ import ArticleType from './ArticleType.vue';
 </script>
 
 <template>
-  <section class="bg-dark-bg w-full py-[52px] border-t border-b-2 border-solid border-t-color-border border-b-[#333333] overflow-x-auto	">
+  <section class="bg-dark-bg w-full py-[52px] border-t border-solid border-t-color-border overflow-x-auto	">
     <Container class="flex justify-between items-center">
         <ArticleType text="Обучающие статьи" image="/icons/framer.svg"/>
         <ArticleType text="Обзоры технологий" image="/icons/nuxt.svg"/>

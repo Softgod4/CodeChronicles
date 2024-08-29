@@ -15,7 +15,8 @@ module.exports = {
         'dark-bg': '#141414',
         'banner-bg': '#1e1e1e',
         'color-border': '#262626',
-        'button-bg': '#1a1a1a'
+        'button-bg': '#1a1a1a',
+        'description-text': '#666666'
       }
     }
   },
