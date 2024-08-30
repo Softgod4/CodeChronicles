@@ -20,7 +20,7 @@
 
       <div class="w-px h-full bg-color-border"></div>
 
-      <div class="lg:w-2/3 w-full h-full grid sm:grid-cols-2 grid-cols sm:grid-rows-2 grid-rows-4 gap-6">
+      <div class="lg:w-2/3 lg:mb-0 mb-8 w-full h-full grid sm:grid-cols-2 grid-cols sm:grid-rows-2 grid-rows-4 gap-6">
         <PortfolioShowcase
           stars="1"
           title="TwistSpace"

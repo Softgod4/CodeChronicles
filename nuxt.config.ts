@@ -49,5 +49,5 @@ export default defineNuxtConfig({
         ].includes(tag)
     }
   },
-  modules: ['@nuxt/image', '@tresjs/nuxt']
+  modules: ['@nuxt/image', '@tresjs/nuxt', '@nuxthub/core']
 });
