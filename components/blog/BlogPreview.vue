@@ -52,7 +52,7 @@ defineProps({
     required: false,
     default: 0
   },
-  favorites: {
+  bookmarks: {
     type: Number,
     required: false,
     default: 0
