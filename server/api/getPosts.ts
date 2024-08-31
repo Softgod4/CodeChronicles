@@ -1,5 +1,3 @@
-import formatPost from "../utils/formatPost";
-
 export default eventHandler(async event => {
   const sql = usePostgres();
 
@@ -8,7 +6,7 @@ export default eventHandler(async event => {
   if (table) {
     const posts = await sql`SELECT * FROM Posts`.values();
     event.waitUntil(sql.end());
-    return formatPost(posts);
+    return posts
   } else {
     return false;
   }

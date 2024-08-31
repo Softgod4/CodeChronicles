@@ -1,0 +1,11 @@
+CREATE TABLE Posts (
+    post_id SERIAL PRIMARY KEY,
+    title VARCHAR(50),
+    description TEXT,
+    tags VARCHAR(30)[],
+    text TEXT,
+    likes SMALLINT NOT NULL,
+    created_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    updated_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
