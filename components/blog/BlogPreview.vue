@@ -1,8 +1,8 @@
 <template>
   <div
-    class="border-b border-solid border-color-border flex flex-row justify-between items-center p-4"
+    class="flex flex-row justify-between items-center p-4 h-48 w-auto cursor-pointer bg-dark-bg rounded border border-solid border-color-border"
   >
-    <NuxtLink class="flex flex-col justify-center items-start w-2/3 cursor-pointer">
+    <NuxtLink class="flex flex-col justify-center items-start w-2/3">
       <div class="flex flex-row justify-start items-center">
         <div class="" v-if="tags && Array.isArray(tags)" v-for="(item, index) in tags" :key="index">
           <BlogTag :text="item" />
@@ -19,8 +19,8 @@
         </button>
       </div>
     </NuxtLink>
-    <div class="flex flex-col justify-center items-center">
-      <NuxtImg :src="img" class="max-w-64 w-full h-auto rounded-xl" />
+    <div class="flex flex-col justify-center items-center max-w-64 w-full h-48 p-4">
+      <NuxtImg :src="img" class=" w-full h-full rounded-xl object-cover" />
     </div>
   </div>
 </template>

@@ -5,7 +5,5 @@ export function usePostgres () {
     throw createError('Missing `DATABASE_URL` environment variable')
   }
 
-  return postgres(process.env.DATABASE_URL as string, {
-    ssl: 'require'
-  })
+  return postgres(process.env.DATABASE_URL as string);
 }

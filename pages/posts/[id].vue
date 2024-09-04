@@ -1,5 +1,7 @@
 <template>
-  <h1>page {{ id }}</h1>
+  <BlogContent>
+    <h1>page {{ id }}</h1>
+  </BlogContent>
 </template>
 
 <script setup lang="ts">
