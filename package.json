@@ -22,6 +22,7 @@
     "autoprefixer": "^10.4.20",
     "gsap": "^3.12.5",
     "nuxt": "^3.13.0",
+    "nuxt-shiki": "^0.3.0",
     "postcss": "^8.4.41",
     "postcss-scss": "^4.0.9",
     "postgres": "^3.4.4",

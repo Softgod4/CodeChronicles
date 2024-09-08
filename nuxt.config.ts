@@ -35,6 +35,11 @@ export default defineNuxtConfig({
     }
   },
 
+  shiki: {
+    defaultTheme: 'ayu-dark',
+    highlightOptions: {}
+  },
+
   vue: {
     compilerOptions: {
       isCustomElement: tag =>
@@ -49,5 +54,5 @@ export default defineNuxtConfig({
         ].includes(tag)
     }
   },
-  modules: ['@nuxt/image', '@tresjs/nuxt', '@nuxthub/core']
+  modules: ['@nuxt/image', '@tresjs/nuxt', '@nuxthub/core', 'nuxt-shiki']
 });

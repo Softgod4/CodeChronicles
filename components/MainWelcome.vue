@@ -1,9 +1,9 @@
 <template>
   <Container class="relative">
     <LoadModel/>
-    <section class="w-full h-full absolute top-0 h-full">
+    <section class="w-full h-full absolute top-0">
       <div
-        class="h-full left-0 top-0 xl:w-1/2 w-full bg-dark-bg/95 border border-t-dark-bg border-solid border-color-border h-auto flex justify-between items-center z-30 flex-col backdrop-blur-md transition-colors border-b-[0px]"
+        class="h-full left-0 top-0 xl:w-1/2 w-full bg-dark-bg/95 border border-t-dark-bg border-solid border-color-border flex justify-between items-center z-30 flex-col backdrop-blur-md transition-colors border-b-[0px]"
       >
         <article class="p-6 text-white md:mt-12 mt-2">
           <p class="text-lg font-semibold mb-4 text-[#666666]">

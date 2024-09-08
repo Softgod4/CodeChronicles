@@ -1,6 +1,6 @@
 <template>
   <section>
-    <Container class="border-r border-l border-solid border-color-border">
+    <Container class="border-r border-l border-solid border-color-border p-4">
         <slot />
     </Container>
   </section>
