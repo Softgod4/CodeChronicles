@@ -1,8 +1,8 @@
 <template>
   <Container class="border-r border-l border-solid border-color-border">
-    <BlogApiReference/>
+    <BlogApiReference />
     <!-- Статьи -->
-    <div class="grid grid-cols-2 w-full gap-4 bg-banner-bg p-6">
+    <div class="grid md:grid-cols-2 grid-cols-1 w-full gap-4 bg-banner-bg p-6">
       <div v-if="status === 'pending'" class="text-white text-2xl mt-4 text-center">Loading...</div>
       <div
         v-else-if="posts && Array.isArray(posts)"
@@ -16,7 +16,7 @@
           :likes="Number(posts[index][5])"
           :img="posts[index][6]"
           :tags="posts[index][3]"
-          @click="router.push(`article/${posts[index][0]}`)"
+          @click="router.push({ path: `/article/${posts[index][0]}` })"
         />
       </div>
       <div v-else class="text-white text-2xl mt-4 text-center">No posts available.</div>
@@ -52,8 +52,8 @@ onMounted(() => {
     duration: 0.4,
     opacity: 0,
     filter: 'blur(5px)'
-  })
-})
+  });
+});
 
 const { status, data } = await useFetch('/api/posts');
 const posts = ref(data.value);

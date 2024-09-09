@@ -1,6 +1,6 @@
 <template>
   <article
-    class="flex flex-row justify-between items-center p-4 h-48 w-auto cursor-pointer bg-dark-bg rounded border border-solid border-color-border"
+    class="flex lg:flex-row flex-col-reverse justify-between lg:items-center items-start p-4 lg:h-48 h-auto w-auto cursor-pointer bg-dark-bg rounded border border-solid border-color-border"
   >
     <NuxtLink class="flex flex-col justify-center items-start w-2/3">
       <div class="flex flex-row justify-start items-center">
@@ -8,8 +8,8 @@
           <BlogTag :text="item" />
         </div>
       </div>
-      <h3 class="text-white text-3xl mt-4">{{ title }}</h3>
-      <p class="text-extralight text-light-text text-[16px] mt-2 text-ellipsis overflow-hidden">
+      <h3 class="text-white text-2xl mt-4 whitespace-nowrap">{{ title }}</h3>
+      <p class="text-extralight text-light-text text-[16px] mt-2 whitespace-nowrap text-ellipsis overflow-hidden">
         {{ description }}
       </p>
       <div class="flex justify-start items-center mt-6">
@@ -19,7 +19,7 @@
         </button>
       </div>
     </NuxtLink>
-    <div class="flex flex-col justify-center items-center max-w-64 w-full h-48 p-4">
+    <div class="flex flex-col justify-center items-center md:max-w-64 w-full md:h-48 h-full p-4">
       <NuxtImg :src="img" class="w-full h-full rounded-xl object-cover" />
     </div>
   </article>

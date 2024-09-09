@@ -1,8 +1,8 @@
 <template>
   <main
-    class="text-white flex flex-col lg:flex-row justify-around items-center w-full p-8 bg-banner-bg border-b-2 border-solid border-color-border"
+    class="text-white flex flex-col xl:flex-row lg:justify-around justify-center items-center w-full xl:p-8 p-2 bg-banner-bg border-b-2 border-solid border-color-border xl:pb-0 pb-12"
   >
-    <div class="w-1/2 text-start">
+    <div class="xl:w-1/2 w-full text-start xl:mb-0 mb-6">
       <h2 class="md:text-[60px] text-[32px] sm:text-[38px] font-medium mb-6 leading-tight relative">
         Раздел статей 🗓️
       </h2>
@@ -26,7 +26,7 @@
     </div>
 
     <div
-      class="bg-dark-bg/90 ease-out duration-300 p-6 rounded-md shadow-xl border-2 border-solid border-color-border hover:border-banner-bg hover:shadow-2xl backdrop-blur-sm"
+      class="bg-dark-bg/90 ease-out duration-300 p-6 rounded-md shadow-xl border-2 border-solid border-color-border hover:border-banner-bg hover:shadow-2xl backdrop-blur-sm xl:w-auto w-full"
     >
       <h3 class="text-2xl font-bold text-white">API Запросы</h3>
 
@@ -41,12 +41,16 @@
 
       <div class="mb-4">
         <p class="text-extralight text-white text-[18px] mb-2">2. Получение статьи по ID:</p>
-        <Shiki code="GET http://localhost:3000/api/posts/{id}" />
+        <Shiki code="GET http://localhost:3000/api/posts/{id}" class="whitespace-normal" />
       </div>
 
       <div class="mb-4">
         <p class="text-extralight text-white text-[18px] mb-2">3. Создание новой статьи:</p>
-        <Shiki lang="json" code='{"title": "Новая статья", "content": "Текст новой статьи..."}' />
+        <Shiki
+          lang="json"
+          code='{"title": "Новая статья", "content": "Текст новой статьи..."}'
+          class="whitespace-normal"
+        />
       </div>
 
       <div class="mb-4">
@@ -56,6 +60,7 @@
         <Shiki
           lang="json"
           code='{"title": "Обновленная статья", "content": "Обновленный текст статьи..."}'
+          class="whitespace-normal"
         />
       </div>
     </div>

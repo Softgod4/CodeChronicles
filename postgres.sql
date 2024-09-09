@@ -10,6 +10,10 @@ CREATE TABLE Posts (
     updated_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
+
+
+
+-- добавить в таблицу значения
 INSERT INTO Posts (title, description, tags, text, likes, img, created_on, updated_on)
 	VALUES ('Второй пост', 'Описание второго поста', ARRAY['telegram', 'coding'], 'Текст второго поста', 2, 'image/test/macbook.jpg' ,now(), now());
 
@@ -39,3 +43,9 @@ INSERT INTO Posts (title, description, tags, text, likes, img, created_on, updat
 
 INSERT INTO Posts (title, description, tags, text, likes, img, created_on, updated_on)
     VALUES ('Десятый пост', 'Описание десятого поста', ARRAY['java', 'spring'], 'Текст десятого поста', 9, 'image/test/java.jpg', now(), now());
+
+
+
+-- добавление лайков
+SELECT * FROM Posts
+WHERE post_id = ${postId}
