@@ -1,6 +1,6 @@
 <template>
   <main
-    class="text-white flex flex-col xl:flex-row lg:justify-around justify-center items-center w-full xl:p-8 p-2 bg-banner-bg border-b-2 border-solid border-color-border xl:pb-0 pb-12"
+    class="text-white flex flex-col xl:flex-row lg:justify-around justify-center items-center w-full xl:p-8 p-2 bg-banner-bg border-b-2 border-solid border-color-border xl:pb-6 pb-12"
   >
     <div class="xl:w-1/2 w-full text-start xl:mb-0 mb-6">
       <h2 class="md:text-[60px] text-[32px] sm:text-[38px] font-medium mb-6 leading-tight relative">
