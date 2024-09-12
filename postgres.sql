@@ -49,3 +49,7 @@ INSERT INTO Posts (title, description, tags, text, likes, img, created_on, updat
 -- добавление лайков
 SELECT * FROM Posts
 WHERE post_id = ${postId}
+
+-- суммирование лайков
+SELECT SUM(likes)
+FROM Posts

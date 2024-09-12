@@ -21,7 +21,7 @@
 
         <div class="flex flex-row justify-between items-center w-full">
           <MainWelcomeTile stats="1" description="Статей" class="border-r" />
-          <MainWelcomeTile stats="0" description="Лайков" />
+          <MainWelcomeTile :stats="String(stats)" description="Лайков" />
           <MainWelcomeTile stats="0" description="Просмотров" class="border-l" />
         </div>
       </div>
@@ -50,11 +50,13 @@ import ButtonMain from './buttons/ButtonMain.vue';
 import MainWelcomeTile from './tiles/MainWelcomeTile.vue';
 import LoadModel from './3D/LoadModel.vue';
 
+const stats = ref(0);
+
 onNuxtReady(async () => {
-  const { status, data } = await useFetch(`/api/posts`);
+  const { data } = await useFetch(`/api/count`);
   if (data.value && Array.isArray(data.value) && data.value.length > 0) {
-    console.log(data.value[0][0]);
-    console.log(data.value);
+    console.log(data.value[0]);
+    stats.value = data.value[0];
   }
 });
 </script>

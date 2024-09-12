@@ -66,9 +66,9 @@ const setLike = async () => {
     if (post.value && Array.isArray(post.value) && post.value.length > 0) post.value[0][5]++;
   }
   gsap.to('.like-btn', {
-    duration: 0.4,
+    duration: 0.2,
     scale: 1.1,
-    rotate: 4,
+    rotate: 3,
     ease: 'back.inOut'
   });
 };
@@ -79,7 +79,7 @@ const setDislike = async () => {
     if (post.value && Array.isArray(post.value) && post.value.length > 0) post.value[0][5]--;
   }
   gsap.to('.like-btn', {
-    duration: 0.5,
+    duration: 0.3,
     scale: 1,
     rotate: 0,
     ease: 'back.inOut'
