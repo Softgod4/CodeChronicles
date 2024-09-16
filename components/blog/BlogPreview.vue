@@ -9,7 +9,9 @@
         </div>
       </div>
       <h3 class="text-white text-2xl mt-4 whitespace-nowrap">{{ title }}</h3>
-      <p class="text-extralight text-light-text text-[16px] mt-2 whitespace-nowrap text-ellipsis overflow-hidden">
+      <p
+        class="text-extralight text-light-text text-[16px] mt-2 whitespace-nowrap text-ellipsis overflow-hidden"
+      >
         {{ description }}
       </p>
       <div class="flex justify-start items-center mt-6">
@@ -33,7 +35,6 @@ article {
     scale: 1.01;
   }
 }
-
 </style>
 
 <script setup scoped lang="ts">
